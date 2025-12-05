@@ -1,0 +1,24 @@
+(lang dune 3.7)
+
+(name advent_of_code_2025)
+
+(generate_opam_files true)
+
+(source
+ (github Jamie-Rodriguez/advent-of-code-2025))
+
+(authors "Jamie Rodríguez")
+
+(maintainers "Jamie Rodríguez")
+
+(license Zlib)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name advent_of_code_2025)
+ (synopsis "Advent of Code 2025")
+ (description "Solutions for Advent of Code 2025")
+ (depends ocaml dune)
+(tags
+ (topics advent-of-code advent-of-code-2025 ocaml puzzle competitive-programming)))

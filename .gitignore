@@ -1,0 +1,23 @@
+# Clojure
+.clj-kondo/
+.cpcache/
+.lsp/
+
+# C
+*.o
+c/lib/
+c/build/
+c/bin/
+
+# OCaml
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+_build/
+_opam/
