@@ -72,7 +72,7 @@ size_t count_zero_positions(size_t num_rotations,
         size_t count = 0;
 
         // Assumes that rotation is now guaranteed to be in the range
-        // [-DIAL_SIZE, DIAL_SIZE] from parsing step, so we only need to add or
+        // (-DIAL_SIZE, DIAL_SIZE) from parsing step, so we only need to add or
         // subtract once
         for (size_t i = 0; i < num_rotations; i++) {
                 position += rotations[i];
@@ -82,7 +82,7 @@ size_t count_zero_positions(size_t num_rotations,
                 else if (position >= DIAL_SIZE)
                         position -= DIAL_SIZE;
 
-                // Branchless Counting micro-optimization
+                // Branchless counting micro-optimization
                 count += (position == 0);
         }
 
